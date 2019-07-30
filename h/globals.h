@@ -297,8 +297,8 @@ extern "C" {
 
 #define USE_EXTERNAL_REFERENCE  true    // Enable/disable external reference voltage input
     
-#define V_REF_MINIMUM       9.0  // lower output voltage limit in [V]
-#define V_REF_MAXIMUM       22.0 // upper output voltage limit in [V]
+#define V_REF_MINIMUM       5.0  // lower output voltage limit in [V]
+#define V_REF_MAXIMUM       20.0 // upper output voltage limit in [V]
     
 #define V_REF_MIN           (uint16_t)(V_REF_MINIMUM * C4SWBB_VOUT_FB_GAIN / ADC_GRAN)
 #define V_REF_MAX           (uint16_t)(V_REF_MAXIMUM * C4SWBB_VOUT_FB_GAIN / ADC_GRAN)

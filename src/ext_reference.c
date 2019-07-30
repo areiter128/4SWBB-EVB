@@ -24,7 +24,7 @@ volatile uint16_t ext_reference_init(void) {
     return(1);
 }
 
-/*! _ADCAN6Interrupt
+/*! _ADCANxInterrupt _ECP20_ADC_Interrupt
  * *************************************************************************************************
  * Summary:
  * ADC input interrupt service routine
@@ -37,12 +37,12 @@ volatile uint16_t ext_reference_init(void) {
  * 
  * *************************************************************************************************/
 
-void __attribute__((__interrupt__, auto_psv, context)) _ADCAN6Interrupt(void)
+void __attribute__((__interrupt__, auto_psv, context)) _ECP20_ADC_Interrupt(void)
 {
     volatile uint16_t samp=0;   // local buffer variable for the most recent ADC result
     volatile uint32_t res=0;    // local buffer variable for the scaling range
     
-    samp = ADCBUF6; // read latest sample
+    samp = ECP20_ADCBUF; // read latest sample from ADC buffer register
     samp <<= 3;     // normalize to Q15
     res = (volatile uint32_t)samp * V_REF_DIFF; // Scale adjustable range by using Q15 number
     res >>= 15;     // normalize back into 16-bit
