@@ -4,6 +4,14 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="f3" displayName="apps" projectFiles="true">
+        <itemPath>h/pwr_control_4swbb.h</itemPath>
+        <itemPath>h/ext_reference.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="config" projectFiles="true">
+        <itemPath>h/globals.h</itemPath>
+        <itemPath>h/MA330048_pinmap.h</itemPath>
+      </logicalFolder>
       <logicalFolder name="f2" displayName="control" projectFiles="true">
         <itemPath>h/npnz16b.h</itemPath>
         <itemPath>h/c4swbb_vloop.h</itemPath>
@@ -17,10 +25,6 @@
         <itemPath>h/init/init_adc.h</itemPath>
       </logicalFolder>
       <itemPath>h/main.h</itemPath>
-      <itemPath>h/ext_reference.h</itemPath>
-      <itemPath>h/globals.h</itemPath>
-      <itemPath>h/MA330048_pinmap.h</itemPath>
-      <itemPath>h/pwr_control_4swbb.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -29,6 +33,14 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="f3" displayName="apps" projectFiles="true">
+        <itemPath>src/pwr_control_4swbb.c</itemPath>
+        <itemPath>src/ext_reference.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="config" projectFiles="true">
+        <itemPath>src/config_bits.c</itemPath>
+        <itemPath>src/globals.c</itemPath>
+      </logicalFolder>
       <logicalFolder name="f2" displayName="control" projectFiles="true">
         <itemPath>src/c4swbb_vloop.c</itemPath>
         <itemPath>src/c4swbb_vloop_asm.s</itemPath>
@@ -42,10 +54,6 @@
         <itemPath>src/init/init_adc.c</itemPath>
       </logicalFolder>
       <itemPath>src/main.c</itemPath>
-      <itemPath>src/config_bits.c</itemPath>
-      <itemPath>src/ext_reference.c</itemPath>
-      <itemPath>src/globals.c</itemPath>
-      <itemPath>src/pwr_control_4swbb.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

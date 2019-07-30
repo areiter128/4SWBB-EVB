@@ -105,7 +105,7 @@ section                    address   length (PC units)   length (bytes) (dec)
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
 .ndata                      0x1000                   0            0x12  (18)
-_050BEF605d401700           0x1012                   0             0xa  (10)
+_0514DF605d4019a4           0x1012                   0             0xa  (10)
 .nbss                       0x101c                   0             0xe  (14)
 .bss                        0x102a                   0            0x44  (68)
 .data                       0x106e                   0             0x6  (6)
@@ -4130,9 +4130,9 @@ __c30_signature
                     0x100e                  _c4swbb_vloop_post_shift_A
                     0x1010                  _c4swbb_vloop_post_scaler
 
-_050BEF605d401700
+_0514DF605d4019a4
                     0x1012          0xa
- _050BEF605d401700
+ _0514DF605d4019a4
                     0x1012          0xa build/4SWBB_dsPIC33CK/production/src/c4swbb_vloop.o
                     0x1012                  _c4swbb_vloop_coefficients
 
