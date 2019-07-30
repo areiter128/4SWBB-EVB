@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <executable name="dist/4SWBB_dsPIC33CK/production/4swbb_acmc.X.production.elf">
+    <memory name="data">
+      <units>bytes</units>
+      <length>24576</length>
+      <used>126</used>
+      <free>24450</free>
+    </memory>
+    <memory name="program">
+      <units>bytes</units>
+      <length>269184</length>
+      <used>5421</used>
+      <free>263763</free>
+    </memory>
+  </executable>
+</project>
