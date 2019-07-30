@@ -92,12 +92,12 @@ xc16-ld 1.36 (B)
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
-.text                        0x200               0x1be           0x29d  (669)
-.text                        0x3be               0xbb6          0x1191  (4497)
-.dinit                       0xf74                0x48            0x6c  (108)
-.text                        0xfbc                0x62            0x93  (147)
+.text                        0x200               0x1bc           0x29a  (666)
+.text                        0x3bc               0xbc8          0x11ac  (4524)
+.dinit                       0xf84                0x48            0x6c  (108)
+.text                        0xfcc                0x62            0x93  (147)
 
-                 Total "program" memory used (bytes):         0x152d  (5421) 2%
+                 Total "program" memory used (bytes):         0x1545  (5445) 2%
 
 
 "data" Memory  [Origin = 0x1000, Length = 0x6000]
@@ -105,7 +105,7 @@ section                    address   length (PC units)   length (bytes) (dec)
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
 .ndata                      0x1000                   0            0x12  (18)
-_04FCAF605d400fda           0x1012                   0             0xa  (10)
+_050BEF605d401700           0x1012                   0             0xa  (10)
 .nbss                       0x101c                   0             0xe  (14)
 .bss                        0x102a                   0            0x44  (68)
 .data                       0x106e                   0             0x6  (6)
@@ -173,70 +173,70 @@ External Symbols in Program Memory (by address):
                   0x000248                  __data_init_extended
                   0x000248                  __data_init
                   0x0002fa                  __ADCAN6Interrupt
-                  0x00038e                  __ADCAN16Interrupt
-                  0x0003b8                  __DefaultInterrupt
-                  0x0003be                  _pwr_control_4swbb_init
-                  0x0004b6                  _pwr_control_4swbb_start
-                  0x0004c8                  _pwr_control_4swbb_exec
-                  0x000678                  _init_pwm_module
-                  0x000712                  _init_sepic_pwm
-                  0x000838                  _init_sepic_trig_pwm
-                  0x0008e2                  _launch_sepic_pwm
-                  0x000924                  _adc_module_init
-                  0x0009d6                  _adc_vin_init
-                  0x000a24                  _adc_vout_init
-                  0x000a70                  _adc_vref_ext_init
-                  0x000ac6                  _adc_module_start
-                  0x000b38                  _init_fosc
-                  0x000c6c                  _init_aclk
-                  0x000cf0                  _c4swbb_vloop_Update
-                  0x000d6c                  _c4swbb_vloop_Reset
-                  0x000d84                  _c4swbb_vloop_Precharge
-                  0x000da4                  _acmp_module_init
-                  0x000dee                  _acmp_c4swbb_init
-                  0x000e42                  _acmp_c4swbb_start
-                  0x000e4e                  _c4swbb_vloop_Init
-                  0x000ee4                  _main
-                  0x000fbc                  _init_timer1
-                  0x000ff0                  _init_gpio
-                  0x001010                  _ext_reference_init
+                  0x00038c                  __ADCAN16Interrupt
+                  0x0003b6                  __DefaultInterrupt
+                  0x0003bc                  _pwr_control_4swbb_init
+                  0x0004b4                  _pwr_control_4swbb_start
+                  0x0004c6                  _pwr_control_4swbb_exec
+                  0x000676                  _init_pwm_module
+                  0x000710                  _init_sepic_pwm
+                  0x000836                  _init_sepic_trig_pwm
+                  0x0008e0                  _launch_sepic_pwm
+                  0x000922                  _adc_module_init
+                  0x0009d4                  _adc_vin_init
+                  0x000a22                  _adc_vout_init
+                  0x000a6e                  _adc_vref_ext_init
+                  0x000ac4                  _adc_module_start
+                  0x000b36                  _init_fosc
+                  0x000c6a                  _init_aclk
+                  0x000cee                  _c4swbb_vloop_Update
+                  0x000d6a                  _c4swbb_vloop_Reset
+                  0x000d82                  _c4swbb_vloop_Precharge
+                  0x000da2                  _acmp_module_init
+                  0x000dec                  _acmp_c4swbb_init
+                  0x000e40                  _acmp_c4swbb_start
+                  0x000e4c                  _main
+                  0x000eee                  _c4swbb_vloop_Init
+                  0x000fcc                  _init_timer1
+                  0x001000                  _init_gpio
+                  0x001020                  _ext_reference_init
                   0x02bf00                  __FSEC.sec
 
 External Symbols in Program Memory (by name):
 
-                  0x00038e                  __ADCAN16Interrupt
+                  0x00038c                  __ADCAN16Interrupt
                   0x0002fa                  __ADCAN6Interrupt
-                  0x0003b8                  __DefaultInterrupt
+                  0x0003b6                  __DefaultInterrupt
                   0x02bf00                  __FSEC.sec
                   0x000248                  __data_init
                   0x000248                  __data_init_extended
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x000dee                  _acmp_c4swbb_init
-                  0x000e42                  _acmp_c4swbb_start
-                  0x000da4                  _acmp_module_init
-                  0x000924                  _adc_module_init
-                  0x000ac6                  _adc_module_start
-                  0x0009d6                  _adc_vin_init
-                  0x000a24                  _adc_vout_init
-                  0x000a70                  _adc_vref_ext_init
-                  0x000e4e                  _c4swbb_vloop_Init
-                  0x000d84                  _c4swbb_vloop_Precharge
-                  0x000d6c                  _c4swbb_vloop_Reset
-                  0x000cf0                  _c4swbb_vloop_Update
-                  0x001010                  _ext_reference_init
-                  0x000c6c                  _init_aclk
-                  0x000b38                  _init_fosc
-                  0x000ff0                  _init_gpio
-                  0x000678                  _init_pwm_module
-                  0x000712                  _init_sepic_pwm
-                  0x000838                  _init_sepic_trig_pwm
-                  0x000fbc                  _init_timer1
-                  0x0008e2                  _launch_sepic_pwm
-                  0x000ee4                  _main
-                  0x0004c8                  _pwr_control_4swbb_exec
-                  0x0003be                  _pwr_control_4swbb_init
-                  0x0004b6                  _pwr_control_4swbb_start
+                  0x000dec                  _acmp_c4swbb_init
+                  0x000e40                  _acmp_c4swbb_start
+                  0x000da2                  _acmp_module_init
+                  0x000922                  _adc_module_init
+                  0x000ac4                  _adc_module_start
+                  0x0009d4                  _adc_vin_init
+                  0x000a22                  _adc_vout_init
+                  0x000a6e                  _adc_vref_ext_init
+                  0x000eee                  _c4swbb_vloop_Init
+                  0x000d82                  _c4swbb_vloop_Precharge
+                  0x000d6a                  _c4swbb_vloop_Reset
+                  0x000cee                  _c4swbb_vloop_Update
+                  0x001020                  _ext_reference_init
+                  0x000c6a                  _init_aclk
+                  0x000b36                  _init_fosc
+                  0x001000                  _init_gpio
+                  0x000676                  _init_pwm_module
+                  0x000710                  _init_sepic_pwm
+                  0x000836                  _init_sepic_trig_pwm
+                  0x000fcc                  _init_timer1
+                  0x0008e0                  _launch_sepic_pwm
+                  0x000e4c                  _main
+                  0x0004c6                  _pwr_control_4swbb_exec
+                  0x0003bc                  _pwr_control_4swbb_init
+                  0x0004b4                  _pwr_control_4swbb_start
 
 Memory Configuration
 
@@ -314,7 +314,7 @@ LOAD c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libfx-elf.a
                   0x000002          0x2 SHORT 0x0 ((ABSOLUTE (__reset) >> 0x10) & 0x7f)
                   0x000003          0x2 SHORT 0x0
 
-.text             0x000200        0x1be
+.text             0x000200        0x1bc
  *(.init)
  .init            0x000200         0x48 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(crt0_extendedch.o)
                   0x000200                  __resetPRI
@@ -326,20 +326,20 @@ LOAD c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libfx-elf.a
  *(.user_init)
  *(.handle)
  *(.isr*)
- .isr.text        0x0002fa         0x94 build/4SWBB_dsPIC33CK/production/src/ext_reference.o
+ .isr.text        0x0002fa         0x92 build/4SWBB_dsPIC33CK/production/src/ext_reference.o
                   0x0002fa                  __ADCAN6Interrupt
- .isr.text        0x00038e         0x2a build/4SWBB_dsPIC33CK/production/src/pwr_control_4swbb.o
-                  0x00038e                  __ADCAN16Interrupt
- .isr             0x0003b8          0x4 default_isr
-                  0x0003b8                  __DefaultInterrupt
+ .isr.text        0x00038c         0x2a build/4SWBB_dsPIC33CK/production/src/pwr_control_4swbb.o
+                  0x00038c                  __ADCAN16Interrupt
+ .isr             0x0003b6          0x4 default_isr
+                  0x0003b6                  __DefaultInterrupt
  *(.libc)
  *(.libm)
  *(.libdsp)
  *(.lib*)
  .libpic30_crt_start_mode
-                  0x0003bc          0x2 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(crt_start_mode_normalch.Leo)
-                  0x0003bc                  __crt_start_mode
-                  0x0003bc                  __crt_start_mode_normal
+                  0x0003ba          0x2 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(crt_start_mode_normalch.Leo)
+                  0x0003ba                  __crt_start_mode
+                  0x0003ba                  __crt_start_mode_normal
 
 usercode
  *(usercode)
@@ -433,7 +433,7 @@ __FBTSEQ
  .debug_abbrev    0x00087a         0x14 build/4SWBB_dsPIC33CK/production/src/c4swbb_vloop_asm.o
  .debug_abbrev    0x00088e        0x13e build/4SWBB_dsPIC33CK/production/src/pwr_control_4swbb.o
 
-.debug_line       0x000000        0xe29
+.debug_line       0x000000        0xe2e
  *(.debug_line)
  .debug_line      0x000000        0x129 build/4SWBB_dsPIC33CK/production/src/init/init_fosc.o
  .debug_line      0x000129        0x109 build/4SWBB_dsPIC33CK/production/src/init/init_timer1.o
@@ -441,13 +441,13 @@ __FBTSEQ
  .debug_line      0x000332        0x1d1 build/4SWBB_dsPIC33CK/production/src/init/init_pwm.o
  .debug_line      0x000503        0x127 build/4SWBB_dsPIC33CK/production/src/init/init_acmp.o
  .debug_line      0x00062a        0x18e build/4SWBB_dsPIC33CK/production/src/init/init_adc.o
- .debug_line      0x0007b8        0x129 build/4SWBB_dsPIC33CK/production/src/main.o
- .debug_line      0x0008e1         0x1a build/4SWBB_dsPIC33CK/production/src/config_bits.o
- .debug_line      0x0008fb        0x130 build/4SWBB_dsPIC33CK/production/src/ext_reference.o
- .debug_line      0x000a2b         0x1a build/4SWBB_dsPIC33CK/production/src/globals.o
- .debug_line      0x000a45        0x127 build/4SWBB_dsPIC33CK/production/src/c4swbb_vloop.o
- .debug_line      0x000b6c         0xa0 build/4SWBB_dsPIC33CK/production/src/c4swbb_vloop_asm.o
- .debug_line      0x000c0c        0x21d build/4SWBB_dsPIC33CK/production/src/pwr_control_4swbb.o
+ .debug_line      0x0007b8        0x12e build/4SWBB_dsPIC33CK/production/src/main.o
+ .debug_line      0x0008e6         0x1a build/4SWBB_dsPIC33CK/production/src/config_bits.o
+ .debug_line      0x000900        0x130 build/4SWBB_dsPIC33CK/production/src/ext_reference.o
+ .debug_line      0x000a30         0x1a build/4SWBB_dsPIC33CK/production/src/globals.o
+ .debug_line      0x000a4a        0x127 build/4SWBB_dsPIC33CK/production/src/c4swbb_vloop.o
+ .debug_line      0x000b71         0xa0 build/4SWBB_dsPIC33CK/production/src/c4swbb_vloop_asm.o
+ .debug_line      0x000c11        0x21d build/4SWBB_dsPIC33CK/production/src/pwr_control_4swbb.o
 
 .debug_frame      0x000000        0x368
  *(.debug_frame)
@@ -4130,9 +4130,9 @@ __c30_signature
                     0x100e                  _c4swbb_vloop_post_shift_A
                     0x1010                  _c4swbb_vloop_post_scaler
 
-_04FCAF605d400fda
+_050BEF605d401700
                     0x1012          0xa
- _04FCAF605d400fda
+ _050BEF605d401700
                     0x1012          0xa build/4SWBB_dsPIC33CK/production/src/c4swbb_vloop.o
                     0x1012                  _c4swbb_vloop_coefficients
 
@@ -4232,45 +4232,45 @@ _04FCAF605d400fda
  .ivt._ADCAN16Interrupt
                   0x0000ea          0x2 build/4SWBB_dsPIC33CK/production/src/pwr_control_4swbb.o
 
-.text             0x0003be        0xbb6
- .text            0x0003be        0x2ba build/4SWBB_dsPIC33CK/production/src/pwr_control_4swbb.o
-                  0x0003be                  _pwr_control_4swbb_init
-                  0x0004b6                  _pwr_control_4swbb_start
-                  0x0004c8                  _pwr_control_4swbb_exec
- .text            0x000678        0x2ac build/4SWBB_dsPIC33CK/production/src/init/init_pwm.o
-                  0x000678                  _init_pwm_module
-                  0x000712                  _init_sepic_pwm
-                  0x000838                  _init_sepic_trig_pwm
-                  0x0008e2                  _launch_sepic_pwm
- .text            0x000924        0x214 build/4SWBB_dsPIC33CK/production/src/init/init_adc.o
-                  0x000924                  _adc_module_init
-                  0x0009d6                  _adc_vin_init
-                  0x000a24                  _adc_vout_init
-                  0x000a70                  _adc_vref_ext_init
-                  0x000ac6                  _adc_module_start
- .text            0x000b38        0x1b8 build/4SWBB_dsPIC33CK/production/src/init/init_fosc.o
-                  0x000b38                  _init_fosc
-                  0x000c6c                  _init_aclk
- .text            0x000cf0         0xb4 build/4SWBB_dsPIC33CK/production/src/c4swbb_vloop_asm.o
-                  0x000cf0                  _c4swbb_vloop_Update
-                  0x000d6c                  _c4swbb_vloop_Reset
-                  0x000d84                  _c4swbb_vloop_Precharge
- .text            0x000da4         0xaa build/4SWBB_dsPIC33CK/production/src/init/init_acmp.o
-                  0x000da4                  _acmp_module_init
-                  0x000dee                  _acmp_c4swbb_init
-                  0x000e42                  _acmp_c4swbb_start
- .text            0x000e4e         0x96 build/4SWBB_dsPIC33CK/production/src/c4swbb_vloop.o
-                  0x000e4e                  _c4swbb_vloop_Init
- .text            0x000ee4         0x90 build/4SWBB_dsPIC33CK/production/src/main.o
-                  0x000ee4                  _main
+.text             0x0003bc        0xbc8
+ .text            0x0003bc        0x2ba build/4SWBB_dsPIC33CK/production/src/pwr_control_4swbb.o
+                  0x0003bc                  _pwr_control_4swbb_init
+                  0x0004b4                  _pwr_control_4swbb_start
+                  0x0004c6                  _pwr_control_4swbb_exec
+ .text            0x000676        0x2ac build/4SWBB_dsPIC33CK/production/src/init/init_pwm.o
+                  0x000676                  _init_pwm_module
+                  0x000710                  _init_sepic_pwm
+                  0x000836                  _init_sepic_trig_pwm
+                  0x0008e0                  _launch_sepic_pwm
+ .text            0x000922        0x214 build/4SWBB_dsPIC33CK/production/src/init/init_adc.o
+                  0x000922                  _adc_module_init
+                  0x0009d4                  _adc_vin_init
+                  0x000a22                  _adc_vout_init
+                  0x000a6e                  _adc_vref_ext_init
+                  0x000ac4                  _adc_module_start
+ .text            0x000b36        0x1b8 build/4SWBB_dsPIC33CK/production/src/init/init_fosc.o
+                  0x000b36                  _init_fosc
+                  0x000c6a                  _init_aclk
+ .text            0x000cee         0xb4 build/4SWBB_dsPIC33CK/production/src/c4swbb_vloop_asm.o
+                  0x000cee                  _c4swbb_vloop_Update
+                  0x000d6a                  _c4swbb_vloop_Reset
+                  0x000d82                  _c4swbb_vloop_Precharge
+ .text            0x000da2         0xaa build/4SWBB_dsPIC33CK/production/src/init/init_acmp.o
+                  0x000da2                  _acmp_module_init
+                  0x000dec                  _acmp_c4swbb_init
+                  0x000e40                  _acmp_c4swbb_start
+ .text            0x000e4c         0xa2 build/4SWBB_dsPIC33CK/production/src/main.o
+                  0x000e4c                  _main
+ .text            0x000eee         0x96 build/4SWBB_dsPIC33CK/production/src/c4swbb_vloop.o
+                  0x000eee                  _c4swbb_vloop_Init
 
-.dinit            0x000f74         0x48
- .dinit           0x000f74         0x48 data_init
+.dinit            0x000f84         0x48
+ .dinit           0x000f84         0x48 data_init
 
-.text             0x000fbc         0x62
- .text            0x000fbc         0x34 build/4SWBB_dsPIC33CK/production/src/init/init_timer1.o
-                  0x000fbc                  _init_timer1
- .text            0x000ff0         0x20 build/4SWBB_dsPIC33CK/production/src/init/init_gpio.o
-                  0x000ff0                  _init_gpio
- .text            0x001010          0xe build/4SWBB_dsPIC33CK/production/src/ext_reference.o
-                  0x001010                  _ext_reference_init
+.text             0x000fcc         0x62
+ .text            0x000fcc         0x34 build/4SWBB_dsPIC33CK/production/src/init/init_timer1.o
+                  0x000fcc                  _init_timer1
+ .text            0x001000         0x20 build/4SWBB_dsPIC33CK/production/src/init/init_gpio.o
+                  0x001000                  _init_gpio
+ .text            0x001020          0xe build/4SWBB_dsPIC33CK/production/src/ext_reference.o
+                  0x001020                  _ext_reference_init
