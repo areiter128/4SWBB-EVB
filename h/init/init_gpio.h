@@ -40,23 +40,17 @@
 
 #ifdef __4SWBB_dsPIC33CK__
 
-    // TP4 on CK_DP_PIM
-    #define DBGPIN1_SET         DBGPIN_SET
-    #define DBGPIN_1_CLEAR      DBGPIN_CLEAR 
-    #define DBGPIN_1_TOGGLE     DBGPIN_TOGGLE
-    #define DBGPIN_1_INIT       DBGPIN_INIT_OUTPUT
-
     // Green LED on 4SWBB Board
-    #define DBGPIN_2_SET        SCL_SET
-    #define DBGPIN_2_CLEAR      SCL_CLEAR
-    #define DBGPIN_2_TOGGLE     SCL_TOGGLE
-    #define DBGPIN_2_INIT       SCL_INIT_OUTPUT
+    #define DBGLED_GN_SET       ECP53_SET
+    #define DBGLED_GN_CLEAR     ECP53_CLEAR
+    #define DBGLED_GN_TOGGLE    ECP53_TOGGLE
+    #define DBGLED_GN_INIT      ECP53_INIT_OUTPUT
 
     // Red LED on 4SWBB Board
-    #define DBGPIN_3_SET        SCL_SET
-    #define DBGPIN_3_CLEAR      SCL_CLEAR
-    #define DBGPIN_3_TOGGLE     SCL_TOGGLE
-    #define DBGPIN_3_INIT       SCL_INIT_OUTPUT
+    #define DBGLED_RD_SET       ECP55_SET
+    #define DBGLED_RD_CLEAR     ECP55_CLEAR
+    #define DBGLED_RD_TOGGLE    ECP55_TOGGLE
+    #define DBGLED_RD_INIT      ECP55_INIT_OUTPUT
 
 #endif
 

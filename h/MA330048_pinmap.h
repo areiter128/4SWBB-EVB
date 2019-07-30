@@ -1483,6 +1483,25 @@
 #define ECP52_INIT_OUTPUT  {ECP52_WR = PINSTATE_LOW; ECP52_TRIS = PINDIR_OUTPUT;} // initialization macro for digital output
 #define ECP52_INIT_INPUT   {ECP52_WR = PINSTATE_HIGH; ECP52_TRIS = PINDIR_INPUT;} // initialization macro for digital input
 
+// Device Pin #46 is RB6
+#define ECP53_TRIS    TRISBbits.TRISB6 // GPIO direction register bit
+#define ECP53_WR      LATBbits.LATB6 // GPIO port latch register bit
+#define ECP53_RD      PORTBbits.RB6 // GPIO port register bit
+#define ECP53_ODC     ODCBbits.ODCB6 // GPIO port open drain configuration register bit
+#define ECP53_CNPU    CNPUBbits.CNPUB6 // GPIO port pull-up resistor register bit
+#define ECP53_CNPD    CNPDBbits.CNPDB6 // GPIO port pull-down resistor register bit
+#define ECP53_CNEN0   CNEN0Bbits.CNEN0B6 // GPIO port change notification Enable register bit
+#define ECP53_CNSTAT  CNSTATBbits.CNSTATB6 // GPIO port change notification Status register bit
+#define ECP53_CNEN1   CNEN1Bbits.CNEN1B6 // GPIO port change notification Edge Select Enable register bit
+#define ECP53_CNF     CNFBbits.CNFB6 // GPIO port change notification flag bit register bit
+#define ECP53_RP      38 // Number of Remappable Pin
+#define ECP53_SET     { asm volatile ("bset _LATB, #6 \n"); }
+#define ECP53_CLEAR   { asm volatile ("bclr _LATB, #6 \n"); }
+#define ECP53_TOGGLE  { asm volatile ("btg  _LATB, #6 \n"); }
+#define ECP53_IS_ANALOG_INPUT  0 // Pin is/is not analog input 
+#define ECP53_INIT_OUTPUT  {ECP53_WR = PINSTATE_LOW; ECP53_TRIS = PINDIR_OUTPUT;} // initialization macro for digital output
+#define ECP53_INIT_INPUT   {ECP53_WR = PINSTATE_HIGH; ECP53_TRIS = PINDIR_INPUT;} // initialization macro for digital input
+
 // Device Pin #12 is RD13
 #define ECP54_TRIS    TRISDbits.TRISD13 // GPIO direction register bit
 #define ECP54_WR      LATDbits.LATD13 // GPIO port latch register bit
@@ -1501,6 +1520,25 @@
 #define ECP54_IS_ANALOG_INPUT  0 // Pin is/is not analog input 
 #define ECP54_INIT_OUTPUT  {ECP54_WR = PINSTATE_LOW; ECP54_TRIS = PINDIR_OUTPUT;} // initialization macro for digital output
 #define ECP54_INIT_INPUT   {ECP54_WR = PINSTATE_HIGH; ECP54_TRIS = PINDIR_INPUT;} // initialization macro for digital input
+
+// Device Pin #45 is RB5
+#define ECP55_TRIS    TRISBbits.TRISB5 // GPIO direction register bit
+#define ECP55_WR      LATBbits.LATB5 // GPIO port latch register bit
+#define ECP55_RD      PORTBbits.RB5 // GPIO port register bit
+#define ECP55_ODC     ODCBbits.ODCB5 // GPIO port open drain configuration register bit
+#define ECP55_CNPU    CNPUBbits.CNPUB5 // GPIO port pull-up resistor register bit
+#define ECP55_CNPD    CNPDBbits.CNPDB5 // GPIO port pull-down resistor register bit
+#define ECP55_CNEN0   CNEN0Bbits.CNEN0B5 // GPIO port change notification Enable register bit
+#define ECP55_CNSTAT  CNSTATBbits.CNSTATB5 // GPIO port change notification Status register bit
+#define ECP55_CNEN1   CNEN1Bbits.CNEN1B5 // GPIO port change notification Edge Select Enable register bit
+#define ECP55_CNF     CNFBbits.CNFB5 // GPIO port change notification flag bit register bit
+#define ECP55_RP      37 // Number of Remappable Pin
+#define ECP55_SET     { asm volatile ("bset _LATB, #5 \n"); }
+#define ECP55_CLEAR   { asm volatile ("bclr _LATB, #5 \n"); }
+#define ECP55_TOGGLE  { asm volatile ("btg  _LATB, #5 \n"); }
+#define ECP55_IS_ANALOG_INPUT  0 // Pin is/is not analog input 
+#define ECP55_INIT_OUTPUT  {ECP55_WR = PINSTATE_LOW; ECP55_TRIS = PINDIR_OUTPUT;} // initialization macro for digital output
+#define ECP55_INIT_INPUT   {ECP55_WR = PINSTATE_HIGH; ECP55_TRIS = PINDIR_INPUT;} // initialization macro for digital input
 
 // Device Pin #34 is RB3
 #define ECP56_TRIS    TRISBbits.TRISB3 // GPIO direction register bit
